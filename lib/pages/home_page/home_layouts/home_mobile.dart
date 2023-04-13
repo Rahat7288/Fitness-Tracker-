@@ -1,3 +1,4 @@
+import 'package:elo_task/widgets/custom_button2.dart';
 import 'package:flutter/material.dart';
 
 import '../../../widgets/custom_button1.dart';
@@ -11,7 +12,7 @@ class HomeMobile extends StatelessWidget {
       appBar: AppBar(
         title: Text('WalkMate'),
       ),
-      body: Center(child: CustomButton1(context, 'Get Started')),
+      body: Center(child: CustomButton2(context, 'Get Started')),
     );
   }
 }
