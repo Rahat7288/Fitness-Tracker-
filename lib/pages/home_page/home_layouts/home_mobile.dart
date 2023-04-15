@@ -10,7 +10,10 @@ class HomeMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('WalkMate'),
+        toolbarHeight: 100.0,
+        // leading: Container(
+        //   child: Image.asset('assets/images/Logo1.png'),
+        // ),
       ),
       body: Center(child: CustomButton2(context, 'Get Started')),
     );
