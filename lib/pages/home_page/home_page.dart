@@ -13,8 +13,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         backgroundColor: CustomColors.stateGray,
         body: ResponsiveLayout(
-          mobileBody: HomeMobile(),
-          tabletBody: HomeTabe(),
+          mobileBody: const HomeMobile(),
+          tabletBody: const HomeTabe(),
         ));
   }
 }
