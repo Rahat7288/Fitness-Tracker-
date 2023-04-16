@@ -2,12 +2,21 @@ import 'package:elo_task/widgets/custom_button1.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/custom_colors.dart';
+import '../../landing_page/first_landing_page.dart';
 
 class HomeTabe extends StatelessWidget {
   const HomeTabe({super.key});
 
   @override
   Widget build(BuildContext context) {
+    press() {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const FirstLandinPage(),
+          ));
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: CustomColors.stateGray,
@@ -57,7 +66,7 @@ class HomeTabe extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  CustomButton1(context, 'Get Started')
+                  CustomButton1(context, 'Get Started', press)
                 ]),
               ),
             )
