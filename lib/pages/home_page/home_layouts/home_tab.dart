@@ -9,13 +9,13 @@ class HomeTabe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    press() {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const FirstLandinPage(),
-          ));
-    }
+    // press() {
+    //   Navigator.push(
+    //       context,
+    //       MaterialPageRoute(
+    //         builder: (context) => const FirstLandinPage(),
+    //       ));
+    // }
 
     return Scaffold(
       appBar: AppBar(
@@ -66,7 +66,14 @@ class HomeTabe extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  CustomButton1(context, 'Get Started', press)
+                  CustomButton1(
+                    buttonName: 'Get Started',
+                    press: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const FirstLandinPage(),
+                        )),
+                  ),
                 ]),
               ),
             )

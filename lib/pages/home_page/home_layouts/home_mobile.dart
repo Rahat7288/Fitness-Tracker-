@@ -76,13 +76,13 @@ class HomeMobile extends StatelessWidget {
 }
 
 Widget backgroungImage(BuildContext context) {
-  press() {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const FirstLandinPage(),
-        ));
-  }
+  // press() {
+  //   Navigator.push(
+  //       context,
+  //       MaterialPageRoute(
+  //         builder: (context) => const FirstLandinPage(),
+  //       ));
+  // }
 
   return BlocBuilder<ThemeChangeCubit, ThemeChangeState>(
     builder: (context, state) {
@@ -99,7 +99,14 @@ Widget backgroungImage(BuildContext context) {
           ),
           Positioned(
             bottom: 40.0,
-            child: CustomButton1(context, 'Get Started', press),
+            child: CustomButton1(
+              buttonName: 'Get Started',
+              press: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const FirstLandinPage(),
+                  )),
+            ),
           )
         ],
       );

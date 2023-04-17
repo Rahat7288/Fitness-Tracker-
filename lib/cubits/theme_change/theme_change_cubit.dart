@@ -9,7 +9,7 @@ class ThemeChangeCubit extends Cubit<ThemeChangeState> {
   ThemeChangeCubit() : super(ThemeChangeInitiat());
 
   void changeTheme() {
-    buttonBool = !buttonBool;
-    emit(ThemeChange(buttonBool: buttonBool));
+    // buttonBool = !buttonBool;
+    emit(ThemeChange(buttonBool: !buttonBool));
   }
 }

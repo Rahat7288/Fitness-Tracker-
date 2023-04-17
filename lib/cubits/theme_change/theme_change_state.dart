@@ -12,7 +12,7 @@ class ThemeChangeInitiat extends ThemeChangeState {
 }
 
 class ThemeChange extends ThemeChangeState {
-  bool buttonBool;
+  bool buttonBool = false;
   ThemeChange({
     required this.buttonBool,
   });
