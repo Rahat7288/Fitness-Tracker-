@@ -58,7 +58,7 @@ class FirstLandingMobile extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 20,
+                height: 50,
               ),
               SliderTheme(
                   data: SliderTheme.of(context).copyWith(),
@@ -76,13 +76,25 @@ class FirstLandingMobile extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
-                    Text('0m'),
-                    Text('10000m'),
+                    Text(
+                      '0m',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Text(
+                      '10000m',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
                   ],
                 ),
               ),
               const SizedBox(
-                height: 200,
+                height: 170,
               ),
               CustomButton1(
                 press: () {},
@@ -91,7 +103,13 @@ class FirstLandingMobile extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              CustomButton2(press: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> const HistoryPage())), buttonName: 'History',),
+              CustomButton2(
+                press: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HistoryPage())),
+                buttonName: 'History',
+              ),
             ],
           ),
         );
