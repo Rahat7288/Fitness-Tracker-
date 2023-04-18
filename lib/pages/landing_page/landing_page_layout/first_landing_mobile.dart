@@ -1,3 +1,4 @@
+import 'package:elo_task/pages/history_page/history_page.dart';
 import 'package:elo_task/widgets/custom_button1.dart';
 import 'package:elo_task/widgets/custom_button2.dart';
 import 'package:elo_task/widgets/theme_button2.dart';
@@ -90,7 +91,7 @@ class FirstLandingMobile extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              CustomButton2(press: () {}, buttonName: 'History')
+              CustomButton2(press: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> const HistoryPage())), buttonName: 'History',),
             ],
           ),
         );
