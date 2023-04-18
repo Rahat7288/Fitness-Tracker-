@@ -48,7 +48,7 @@ class CongratesPage1Tab extends StatelessWidget {
                   child: Image.asset('assets/images/Congrats.png'),
                 ),
                 SizedBox(
-                  width: 600,
+                  width: MediaQuery.of(context).size.width / 1.5,
                   height: MediaQuery.of(context).size.height,
                   child: Column(
                     children: [
