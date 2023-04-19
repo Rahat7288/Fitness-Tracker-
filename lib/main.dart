@@ -1,3 +1,4 @@
+import 'package:elo_task/cubits/set_target/set_target_cubit.dart';
 import 'package:elo_task/cubits/theme_change/theme_change_cubit.dart';
 import 'package:elo_task/pages/home_page/home_page.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => ThemeChangeCubit())],
+      providers: [
+        BlocProvider(create: (context) => ThemeChangeCubit()),
+        BlocProvider(create: (context) => SetTargetCubit()),
+      ],
       child: BlocBuilder<ThemeChangeCubit, ThemeChangeState>(
         builder: (context, state) {
           return MaterialApp(

@@ -7,13 +7,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../constants/custom_colors.dart';
 import '../../../cubits/theme_change/theme_change_cubit.dart';
+import '../../../widgets/track_slider.dart';
 
 class FirstLandingMobile extends StatelessWidget {
   const FirstLandingMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    double intValue = 0;
+    // double intValue = 0;
     return BlocBuilder<ThemeChangeCubit, ThemeChangeState>(
       builder: (context, state) {
         return Scaffold(
@@ -60,14 +61,8 @@ class FirstLandingMobile extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              SliderTheme(
-                  data: SliderTheme.of(context).copyWith(),
-                  child: Slider(
-                    // min: 0.0,
-                    // max: 10000.0,
-                    onChanged: (double value) {},
-                    value: intValue,
-                  )),
+              // Slider part
+              TrackSlider(),
               const SizedBox(
                 height: 10,
               ),
