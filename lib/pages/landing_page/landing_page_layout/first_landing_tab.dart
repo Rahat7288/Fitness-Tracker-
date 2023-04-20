@@ -18,26 +18,6 @@ class FirstLandingTab extends StatelessWidget {
     return BlocBuilder<ThemeChangeCubit, ThemeChangeState>(
       builder: (context, state) {
         return Scaffold(
-          // appBar: AppBar(
-          //   backgroundColor: (state is ThemeChange)
-          //       ? CustomColors.greenAppbar
-          //       : CustomColors.darkGray,
-          //   elevation: 0,
-          //   toolbarHeight: 80.0,
-          //   leadingWidth: 114.0,
-          //   bottomOpacity: 0,
-          //   toolbarOpacity: 0,
-          //   leading: Padding(
-          //     padding: const EdgeInsets.only(left: 24.0),
-          //     child: Image.asset(
-          //       'assets/images/Logo1.png',
-          //       height: 16,
-          //       width: 114,
-          //     ),
-          //   ),
-          //   actions: [ThemeButton1()],
-          // ),
-
           body: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.only(bottom: 20.0),

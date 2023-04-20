@@ -1,4 +1,5 @@
 import 'package:elo_task/pages/history_page/history_page.dart';
+import 'package:elo_task/pages/landing_page/second_landing_page.dart';
 import 'package:elo_task/widgets/custom_button1.dart';
 import 'package:elo_task/widgets/custom_button2.dart';
 import 'package:elo_task/widgets/theme_button2.dart';
@@ -92,7 +93,11 @@ class FirstLandingMobile extends StatelessWidget {
                 height: 170,
               ),
               CustomButton1(
-                press: () {},
+                press: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SecondLandingPage(),
+                    )),
                 buttonName: 'Set Limit',
               ),
               const SizedBox(
