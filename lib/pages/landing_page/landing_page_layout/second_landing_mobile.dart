@@ -1,3 +1,4 @@
+import 'package:elo_task/widgets/vertical_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -154,17 +155,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
     child: Row(
       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          height: 200,
-          width: 80,
-          // color: Colors.red,
-          decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.white,
-                width: 2.0,
-              ),
-              borderRadius: BorderRadius.circular(15)),
-        ),
+        const VerticaSlider(),
         const SizedBox(
           width: 50,
         ),
@@ -172,7 +163,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Completed',
               style: TextStyle(
                 fontSize: 18,
@@ -185,7 +176,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
             ),
             Text(
               completed,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.w700,
                 color: CustomColors.darkGray,
@@ -194,7 +185,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
             const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               'Target',
               style: TextStyle(
                 fontSize: 18,
@@ -207,7 +198,8 @@ Widget headerContent(BuildContext context, String target, String completed) {
             ),
             Text(
               target,
-              style: TextStyle(
+              style: const TextStyle(
+                fontFamily: 'Plus Jakarta Sans',
                 fontSize: 40,
                 fontWeight: FontWeight.w700,
                 color: CustomColors.stateGray,

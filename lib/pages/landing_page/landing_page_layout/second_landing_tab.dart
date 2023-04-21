@@ -1,3 +1,4 @@
+import 'package:elo_task/widgets/vertical_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -154,17 +155,18 @@ Widget headerContent(BuildContext context, String target, String completed) {
     child: Row(
       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          height: 200,
-          width: 80,
-          // color: Colors.red,
-          decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.white,
-                width: 2.0,
-              ),
-              borderRadius: BorderRadius.circular(15)),
-        ),
+        VerticaSlider(),
+        // Container(
+        //   height: 200,
+        //   width: 80,
+        //   // color: Colors.red,
+        //   decoration: BoxDecoration(
+        //       border: Border.all(
+        //         color: Colors.white,
+        //         width: 2.0,
+        //       ),
+        //       borderRadius: BorderRadius.circular(15)),
+        // ),
         const SizedBox(
           width: 50,
         ),
