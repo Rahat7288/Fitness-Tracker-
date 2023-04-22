@@ -7,9 +7,8 @@ import '../../../cubits/theme_change/theme_change_cubit.dart';
 import '../../../widgets/custom_button1.dart';
 import '../../../widgets/custom_button2.dart';
 import '../../../widgets/theme_button2.dart';
-import '../../../widgets/track_slider.dart';
+
 import '../../history_page/history_page.dart';
-import '../second_landing_page.dart';
 
 class SecondLandingMobile extends StatefulWidget {
   const SecondLandingMobile({super.key});

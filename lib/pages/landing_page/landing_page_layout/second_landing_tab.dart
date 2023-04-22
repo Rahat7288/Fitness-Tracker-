@@ -155,7 +155,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
     child: Row(
       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        VerticaSlider(),
+        const VerticaSlider(),
         // Container(
         //   height: 200,
         //   width: 80,
@@ -174,7 +174,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Completed',
               style: TextStyle(
                 fontSize: 18,
@@ -187,7 +187,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
             ),
             Text(
               completed,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.w700,
                 color: CustomColors.darkGray,
@@ -196,7 +196,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
             const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               'Target',
               style: TextStyle(
                 fontSize: 18,
@@ -209,7 +209,7 @@ Widget headerContent(BuildContext context, String target, String completed) {
             ),
             Text(
               target,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.w700,
                 color: CustomColors.stateGray,

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-
 class ResponsiveLayout extends StatelessWidget {
   final Widget mobileBody;
   final Widget tabletBody;

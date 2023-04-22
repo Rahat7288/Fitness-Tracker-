@@ -7,7 +7,6 @@ abstract class ThemeChangeState extends Equatable {
 
 class ThemeChangeInitiat extends ThemeChangeState {
   @override
-  // TODO: implement props
   List<Object?> get props => [];
 }
 
@@ -17,6 +16,5 @@ class ThemeChange extends ThemeChangeState {
     required this.buttonBool,
   });
   @override
-  // TODO: implement props
   List<Object?> get props => [buttonBool];
 }

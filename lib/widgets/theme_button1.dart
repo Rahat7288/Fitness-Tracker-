@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../cubits/theme_change/theme_change_cubit.dart';
 
-Widget ThemeButton1() {
+Widget themeButton1() {
   return BlocBuilder<ThemeChangeCubit, ThemeChangeState>(
     builder: (context, state) {
       return GestureDetector(

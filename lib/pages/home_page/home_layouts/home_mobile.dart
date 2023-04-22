@@ -34,7 +34,7 @@ class HomeMobile extends StatelessWidget {
                   width: 114,
                 ),
               ),
-              actions: [ThemeButton1()],
+              actions: [themeButton1()],
             ),
             body: Container(
               // padding: const EdgeInsets.symmetric(horizontal: 20.0),

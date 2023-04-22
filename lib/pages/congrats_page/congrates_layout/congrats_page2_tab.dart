@@ -35,7 +35,7 @@ class CongratsPage2Tab extends StatelessWidget {
                 width: 114,
               ),
             ),
-            actions: [ThemeButton1()],
+            actions: [themeButton1()],
           ),
           body: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
